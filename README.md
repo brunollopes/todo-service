@@ -5,7 +5,7 @@
 
 #### Web API backend service to manage Boards and Tasks:
 
-- CRUD operations for Boards ans Tasks
+- CRUD operations for Boards and Tasks
 - Retrieving Users from external API service (Centralized User Service) using the API from https://randomuser.me/api
 - Webhook endpoint to receive events when an user is removed from the user external API
 - Storage using MongoDB
