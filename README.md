@@ -3,15 +3,15 @@
 
 ## What is this demo about ?
 
-#### Web API backend service to manage creations of Boards ans Tasks with the following endpoints service available:
+#### Web API backend service to manage creations of Boards ans Tasks:
 
 - CRUD operations for Boards ans Tasks
 - Retrieving Users from external API service (Centralized User Service) using the API from https://randomuser.me/api
-- Webhook endpoint to receive events when a uset from the user API removes an user
+- Webhook endpoint to receive events when an user is removed from the user external API
 - Storage using MongoDB
 - Unit tests
 - Dockerfile to build docker image
-- Docker compose file to run both containers (Server and Mongo) within same network
+- Docker compose file to run both containers (Todos and Mongo) within same network
 
 
 ## How to run it
