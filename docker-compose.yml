@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+  mongo:
+    image: mongo:latest
+    env_file:
+      - ./.env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+    ports:
+      - 27017:27017
+    networks:
+      - todos-network
+  server:
+    image: bllopes/todos:latest
+    restart: always
+    ports:
+      - 8000:5000
+    depends_on:
+      - mongo
+    environment:
+       MONGO_SERVICE_HOST: mongo:27017
+    networks:
+      - todos-network
+# Networks to be created to facilitate communication between containers
+networks:
+  todos-network:
