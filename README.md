@@ -3,7 +3,7 @@
 
 ## What is this demo about ?
 
-####Web API backend service to manage creations of Boards ans Tasks with the following endpoints service available:
+#### Web API backend service to manage creations of Boards ans Tasks with the following endpoints service available:
 
 - CRUD operations for Boards ans Tasks
 - Retrieving Users from external API service (Centralized User Service) using the API from https://randomuser.me/api
