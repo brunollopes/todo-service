@@ -9,7 +9,7 @@
 - Retrieving Users from external API service (Centralized User Service) using the API from https://randomuser.me/api
 - Webhook endpoint to receive events when an user is removed from the user external API
 - Storage using MongoDB
-- Unit tests
+- Unit/Integration tests
 - Dockerfile to build docker image
 - Docker compose file to run both containers (Todos and Mongo) within same network
 
